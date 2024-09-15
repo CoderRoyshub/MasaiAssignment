@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Feedback Form</title>
+</head>
+
+<body>
+    <form>
+        <label for="feedback-type">Feedback Type:</label>
+        <select id="feedback-type" name="feedback-type">
+            <option value="general">General</option>
+            <option value="bug">Report a Bug</option>
+            <option value="suggestion">Suggestion</option>
+        </select><br><br>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" cols="20"></textarea><br><br>
+
+        <label>Website Rating:</label>
+        <input type="radio" id="rating-1" name="rating" value="1">
+        <label for="rating-1">1</label>
+        <input type="radio" id="rating-2" name="rating" value="2">
+        <label for="rating-2">2</label>
+        <input type="radio" id="rating-3" name="rating" value="3">
+        <label for="rating-3">3</label>
+        <input type="radio" id="rating-4" name="rating" value="4">
+        <label for="rating-4">4</label>
+        <input type="radio" id="rating-5" name="rating" value="5">
+        <label for="rating-5">5</label><br><br> >
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" name="age" min="10" max="100"><br><br>
+
+        <label for="email">Your Email (required):</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8"><br><br>
+
+        <label for="website">Website URL (optional):</label>
+        <input type="url" id="website" name="website"><br><br>
+
+        <label for="terms">
+            <input type="checkbox" id="terms" name="terms"> I agree to the terms and conditions
+        </label><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
