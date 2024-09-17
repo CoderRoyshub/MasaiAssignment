@@ -2,47 +2,86 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
+    <style>
+        .form-field {
+            margin-bottom: 15px;
+        }
+        
+        .form-field input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
 </head>
 
 <body>
     <form>
-        <label for="feedback-type">Feedback Type:</label>
-        <select id="feedback-type" name="feedback-type">
-            <option value="general">General</option>
-            <option value="bug">Report a Bug</option>
-            <option value="suggestion">Suggestion</option>
-        </select><br><br>
 
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" cols="20"></textarea><br><br>
+        <div class="form-field">
+            <select id="feedback-type" name="feedback-type">
+                <option value="general">General</option>
+                <option value="bug">Bug Report</option>
+                <option value="feature">Feature Request</option>
+            </select>
+            <p>Feedback Type:</p>
+        </div>
 
-        <label>Website Rating:</label>
-        <input type="radio" id="rating-1" name="rating" value="1">
-        <label for="rating-1">1</label>
-        <input type="radio" id="rating-2" name="rating" value="2">
-        <label for="rating-2">2</label>
-        <input type="radio" id="rating-3" name="rating" value="3">
-        <label for="rating-3">3</label>
-        <input type="radio" id="rating-4" name="rating" value="4">
-        <label for="rating-4">4</label>
-        <input type="radio" id="rating-5" name="rating" value="5">
-        <label for="rating-5">5</label><br><br> >
-        <label for="age">Your Age:</label>
-        <input type="number" id="age" name="age" min="10" max="100"><br><br>
+        <div class="form-field">
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            <p>Your Message:</p>
+        </div>
 
-        <label for="email">Your Email (required):</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <div class="form-field">
+            <p>Rate our website:</p>
+            <div>
+                <input type="radio" id="rate1" name="rating" value="1">
+                <span>1</span>
+            </div>
+            <div>
+                <input type="radio" id="rate2" name="rating" value="2">
+                <span>2</span>
+            </div>
+            <div>
+                <input type="radio" id="rate3" name="rating" value="3">
+                <span>3</span>
+            </div>
+            <div>
+                <input type="radio" id="rate4" name="rating" value="4">
+                <span>4</span>
+            </div>
+            <div>
+                <input type="radio" id="rate5" name="rating" value="5">
+                <span>5</span>
+            </div>
+        </div>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" minlength="8"><br><br>
+        <div class="form-field">
+            <input type="number" id="age" name="age" min="10" max="100">
+            <p>Your Age:</p>
+        </div>
 
-        <label for="website">Website URL (optional):</label>
-        <input type="url" id="website" name="website"><br><br>
+        <div class="form-field">
+            <input type="email" id="email" name="email" required>
+            <p>Your Email (required):</p>
+        </div>
 
-        <label for="terms">
-            <input type="checkbox" id="terms" name="terms"> I agree to the terms and conditions
-        </label><br><br>
+        <div class="form-field">
+            <input type="password" id="password" name="password" minlength="8" required>
+            <p>Password (min 8 characters):</p>
+        </div>
+
+        <div class="form-field">
+            <input type="url" id="website" name="website">
+            <p>Your Website (optional):</p>
+        </div>
+
+        <div class="form-field">
+            <input type="checkbox" id="terms" name="terms" required>
+            <span>I agree to the terms and conditions</span>
+        </div>
+
         <button type="submit">Submit</button>
     </form>
 </body>
