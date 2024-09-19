@@ -2,55 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Library</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List</title>
     <style>
         table {
-            width: 50%;
-            margin: 20px 0;
+            width: 80%;
+            margin: 20px auto;
             border-collapse: collapse;
         }
         
         table,
         th,
         td {
-            border: 1px solid black;
+            border: 1px solid #333;
+            text-align: center;
         }
         
         th,
         td {
             padding: 10px;
-            text-align: left;
         }
         
         a {
             text-decoration: none;
             color: blue;
         }
-        
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 
 <body>
-
-    <h1>Book Library</h1>
-
-    <!-- Table with one book -->
+    <h1 style="text-align: center">Book List</h1>
     <table>
-        <tr>
-            <th>Book Name</th>
-            <th>Author</th>
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Published Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="book.html">Lord of the Mysteries_ A Compil - Cuttlefish That Loves Diving</a
+            >
+          </td>
+          <td>Lisa Hayes</td>
+          <td>2020</td>
         </tr>
-        <tr>
-            <td><a href="book1.html"> Cuttlefish That Loves Diving </a></td>
-            <td>F. Scott Fitzgerald</td>
-        </tr>
+      </tbody>
     </table>
-
-</body>
-
+  </body>
 </html>
