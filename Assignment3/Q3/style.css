@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* nav */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    margin: 10px 50px 100px;
+}
+
+.header .logo {
+    width: 180px;
+}
+
+.header .right {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar a {
+    padding: 20px;
+    color: #171e31;
+    font-size: medium;
+    font-weight: 600;
+    padding-right: 0;
+}
+
+.right i {
+    scale: 1.8;
+    color: #171e31;
+}
+
+.signup {
+    font-size: 16px;
+    padding: 12px;
+    border: 2px solid;
+    border-radius: 8px;
+    color: #d44a6c;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* flex-box-section */
+
+.cards {
+    margin: 100px 0;
+}
+
+.cards .title h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: xx-large;
+    color: #171e31;
+    font-weight: 600;
+    scale: 1.5;
+}
+
+.title hr {
+    border: none;
+    height: 6px;
+    background-color: #fab613;
+    width: 120px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.title {
+    margin-bottom: 100px;
+}
+
+.cards .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 5%;
+}
+
+.cards .box1 {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -2.4px 10.4px 0px, rgba(0, 0, 0, 0.25) 0px 3.2px 3.2px 0px;
+    width: 100%;
+    padding: 20px;
+    margin: 18px;
+    border-radius: 6px;
+}
+
+.cards .container img {
+    padding-bottom: 20px;
+}
+
+.cards .box1 .fi {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cards .box1 .se {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/* gallery-section */
+
+.gallery {
+    margin: 0px 50px;
+}
+
+.gallery .txt {
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 10px;
+}
+
+.gallery .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery .box1 {
+    width: 100%;
+    margin: 8px;
+    border: 1px solid #d2d2d2fb;
+    border-radius: 12px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery .container img {
+    padding-bottom: 20px;
+}
+
+.gallery .box1 .fi {
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.gallery .box1 .se {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Footer-section */
+
+.footer {
+    background-color: #ffde59;
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    padding: 26px;
+    background-color: white;
+    width: 28%;
+}
+
+.form #head {
+    font-weight: 800;
+}
+
+.form label {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    padding: 6px 0;
+}
+
+.form #terms a {
+    color: blue;
+    text-decoration: underline;
+}
+
+#terms {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form #signin a {
+    color: blue;
+}
+
+.noform {
+    text-align: center;
+    padding: 8px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form form {
+    margin-top: 10px;
+}
+
+.form form input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 8px;
+    border: 1px solid #d2d2d2fb;
+    border-radius: 6px;
+}
+
+.form form span {
+    color: red;
+}
+
+.form #btn {
+    color: #fff;
+    background-color: #346fe3;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 10px 0;
+    margin: 12px 0;
+    border-radius: 6px;
+}
+
+
+/* copyright claims */
+
+footer {
+    background-color: #29211f;
+    line-height: 68px;
+}
+
+footer p {
+    color: #ffffffc5;
+    text-align: center;
+    top: 50%;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
