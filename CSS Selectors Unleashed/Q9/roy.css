@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: end;
+    color: white;
+    text-align: center;
+}
+
+.nav-logo {
+    width: 100px;
+    height: 20px;
+}
+
+nav li {
+    margin: 0 15px;
+    /* Space between items */
+}
+
+.par1 {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.par2 {
+    color: white;
+}

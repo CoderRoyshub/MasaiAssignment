@@ -1,0 +1,7 @@
+#list1>li:nth-child(odd) {
+    color: red;
+}
+
+ul+ul>li::marker {
+    color: pink;
+}
