@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    font-size: large;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+td:nth-child(odd) {
+    font-style: italic;
+    font-weight: bold;
+    color: green;
+}
+
+td:nth-child(4n+1) {
+    font-style: italic;
+    font-size: 30px;
+}
+
+tbody tr:last-child {
+    background-color: yellow;
+}
