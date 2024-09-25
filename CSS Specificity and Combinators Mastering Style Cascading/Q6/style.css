@@ -8,17 +8,18 @@ th,
 td {
     border: 1px solid #000;
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 
-tbody tr:nth-child(odd) td {
+tbody tr:nth-child(3n) td {
     font-weight: bold;
     color: green;
 }
 
-td:nth-child(4n+1) {
+tbody tr:nth-child(4n+1) td {
+    font-weight: bold;
+    font-size: 30px;
     font-style: italic;
-    font-size: 20px;
 }
 
 thead {
