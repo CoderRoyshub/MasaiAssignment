@@ -1,0 +1,30 @@
+.container1 {
+    margin: 20px;
+    display: flex;
+    border: 1px solid black;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    background-color: rgb(1, 2, 110);
+}
+
+.box2 {
+    height: 350px;
+    width: 100%;
+    background-color: rgb(48, 64, 175);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.l1 {
+    margin: 10px;
+    list-style-type: none;
+    opacity: 0.5;
+}
